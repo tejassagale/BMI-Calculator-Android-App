@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tejas.bmicalculator.SignupActivity">
+
+
+    <TextView
+        android:id="@+id/tvPersonalDetails"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Personal Details"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_age"
+
+        android:hint="Age"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:id="@+id/rgGender"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtnMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.24"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="#000000"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbtnFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.24"
+            android:textColor="#000000"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+
+        />
+
+
+</LinearLayout>
+
